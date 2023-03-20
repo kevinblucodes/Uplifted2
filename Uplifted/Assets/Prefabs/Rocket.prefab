@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 1436479294628940738}
   - component: {fileID: 7560465873806956410}
   - component: {fileID: 6811653756743486672}
+  - component: {fileID: 6310003925385311288}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -315,7 +316,7 @@ Transform:
   - {fileID: 7550272147678964483}
   - {fileID: 1568734003077539848}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4331838897396881316
 MeshFilter:
@@ -485,6 +486,18 @@ MonoBehaviour:
   winBell: {fileID: 8300000, guid: b137c1c6866226f439a8736f5c23bfd9, type: 3}
   explosionParticles: {fileID: 7616681671286099223}
   winParticles: {fileID: 2628218190945166715}
+--- !u!114 &6310003925385311288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689040160695158046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5e5935361c1e9449442a23e2acff13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1967789056256553909
 GameObject:
   m_ObjectHideFlags: 0

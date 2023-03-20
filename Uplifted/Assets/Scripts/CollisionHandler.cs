@@ -10,19 +10,40 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] AudioClip rocketExplosion;
     [SerializeField] AudioClip winBell;
 
+    [SerializeField] ParticleSystem explosionParticles;
+    [SerializeField] ParticleSystem winParticles;
+
     Rigidbody rb;
     AudioSource audioSource;
 
     bool isTransitioning = false;
+    bool collisionDisable = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            //StartSuccessSequence();
+            LoadNextLevel();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            collisionDisable = !collisionDisable; //toggle collision
+            Debug.Log("Collision Should be Disabled");
+        }
+
+    }
     void OnCollisionEnter(Collision other)
     {
-        if (!isTransitioning)
+
+
+        if (isTransitioning || collisionDisable) { return; }
         {
             ProcessCollision(other);
         }
@@ -31,7 +52,9 @@ public class CollisionHandler : MonoBehaviour
 
     void OnCollisionStay(Collision other)
     {
-        if (!isTransitioning)
+        
+
+        if (isTransitioning || collisionDisable) {  return; }
         {
             float zRotation = transform.eulerAngles.z % 360;
             if (Mathf.Abs(zRotation) < rotationThreshold)
@@ -71,7 +94,7 @@ public class CollisionHandler : MonoBehaviour
     void StartSuccessSequence()
     {
         isTransitioning = true;
-        //todo add particle effect upon landing
+        winParticles.Play();
         rb.freezeRotation = true;
         GetComponent<Movement>().enabled = false;
         audioSource.Stop();
@@ -80,12 +103,13 @@ public class CollisionHandler : MonoBehaviour
             audioSource.PlayOneShot(winBell);
         }
         
+        
         Invoke("LoadNextLevel", loadNextDelay);
     }
     void StartCrashSequence()
     {
         isTransitioning = true;
-        //todo add particle effect upon crash
+        explosionParticles.Play();
         GetComponent<Movement>().enabled = false;
         audioSource.Stop();
         if (!audioSource.isPlaying)

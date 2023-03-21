@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Deal with the Movers.unity
     guid: 0cfac0eb86cce8949a09f1c8a04b4751
+  - enabled: 1
+    path: Assets/Scenes/Spinjitsu.unity
+    guid: 9f9e221ccff2a824f9ebaf3e98d8d9f9
+  - enabled: 1
+    path: Assets/Scenes/Spinner Spinner Chicken Dinner.unity
+    guid: bc494ef68f456bf4e8d5a852f07ceb2f
   m_configObjects: {}

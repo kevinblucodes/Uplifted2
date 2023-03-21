@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: 0.1
+  yAngle: 70
   zAngle: 0
 --- !u!1001 &372206182
 PrefabInstance:
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: -0.05
+  yAngle: -35
   zAngle: 0
 --- !u!1001 &854039682
 PrefabInstance:
@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: 0.1
+  yAngle: 70
   zAngle: 0
 --- !u!1 &1365955777
 GameObject:
@@ -2648,7 +2648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: -0.05
+  yAngle: -35
   zAngle: 0
 --- !u!1001 &1778114479
 PrefabInstance:
@@ -2738,7 +2738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: -0.05
+  yAngle: -35
   zAngle: 0
 --- !u!1 &1793522716 stripped
 GameObject:
@@ -2763,7 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: 0.1
+  yAngle: 70
   zAngle: 0
 --- !u!1001 &1798869628
 PrefabInstance:
@@ -2869,7 +2869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: -0.05
+  yAngle: -35
   zAngle: 0
 --- !u!1001 &1896330184
 PrefabInstance:
@@ -3337,7 +3337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAngle: 0
-  yAngle: 0.1
+  yAngle: 70
   zAngle: 0
 --- !u!1001 &2075859585
 PrefabInstance:

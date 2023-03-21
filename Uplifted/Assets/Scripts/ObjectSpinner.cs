@@ -11,6 +11,6 @@ public class ObjectSpinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(xAngle, yAngle, zAngle);
+        transform.Rotate(xAngle * Time.deltaTime, yAngle * Time.deltaTime, zAngle * Time.deltaTime);
     }
 }
